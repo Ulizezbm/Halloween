@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Untitled Document</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+
+<body>
+<div id="Layer1" style="position:absolute; left:43px; top:20px; width:226px; height:234px; z-index:1"><img src="142718debda99a4fd562a5c598143c7d.gif" width="473" height="350"></div>
+<div id="Layer2" style="position:absolute; left:562px; top:147px; width:223px; height:224px; z-index:2"><img src="dancing-dance.gif" width="220" height="220"></div>
+<div id="Layer3" style="position:absolute; left:846px; top:335px; width:206px; height:334px; z-index:3"><img src="halloween-pumpkin.gif" width="206" height="337"></div>
+<div id="Layer4" style="position:absolute; left:588px; top:25px; width:291px; height:105px; z-index:4">
+  <h2>
+<script language="JavaScript1.2">
+
+/*
+Neon Lights Text
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+var message="HALLOWEEN"
+var neonbasecolor="black"
+var neontextcolor="orange"
+var flashspeed=200 //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h2>
+
+<p align="center"><br />
+<a href="http://javascriptkit.com"></a></p></div>
+<div id="Layer5" style="position:absolute; left:25px; top:370px; width:281px; height:188px; z-index:5"><img src="monstruos-halloween-gif-gifmaniacos.es-4-1.gif" width="500" height="300"></div>
+<div id="Layer6" style="position:absolute; left:563px; top:372px; width:215px; height:220px; z-index:6"><img src="halloween-funny-happy-halloween.gif" width="220" height="220"></div>
+<div id="Layer7" style="position:absolute; left:548px; top:594px; width:290px; height:83px; z-index:7">
+  <embed src="y2mate.com%20-%20HELLOWEEN%20%20Halloween%20Official%20Music%20Video.mp3" width="280" height="81"></embed>
+</div>
+<div id="Layer8" style="position:absolute; left:840px; top:36px; width:162px; height:293px; z-index:8"><img src="happy-halloween-halloween.gif" width="472" height="299"></div>
+<div id="Layer9" style="position:absolute; left:1078px; top:389px; width:244px; height:260px; z-index:9"><img src="halloween_radio.gif" width="243" height="240"></div>
+</body>
+</html>
